@@ -2,7 +2,15 @@ from test_framework import generic_test
 
 
 def is_palindromic(s: str) -> bool:
-    # TODO - you fill in here.
+    """
+    iterate over half of string, check that first character matches reverse index
+    """
+    start, end = 0, -1
+    for i in range(len(s) // 2):
+        if s[start] != s[end]:
+            return False
+        start += 1
+        end -= 1
     return True
 
 
