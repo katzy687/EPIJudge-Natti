@@ -5,6 +5,7 @@ def is_palindromic(s: str) -> bool:
     """
     iterate over half of string, check that first character matches reverse index
     O(n) T | O(1) S
+    SSH test
     """
     start, end = 0, -1
     for i in range(len(s) // 2):
